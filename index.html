@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TaiCAKE !</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/sitelogo.png" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="home" class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email</h6>
+                        <span>LeVanTai@bestcake.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-primary border-inner py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="" width="300px">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Gọi ngay</h6>
+                        <span>+84 123 45 6789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <img src="img/logo.png" alt="" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="index.html" class="nav-item nav-link" id="user"><i class="fa fa-user"></i> Cá nhân</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
+            <input type="text" id="username" placeholder="Tên đăng nhập">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Mật khẩu">
+            <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu">
+            <button type="submit">XÁC NHẬN</button>
+        </form>
+        <div id="registrationSuccess">
+            <h2>ĐÃ ĐĂNG KÍ</h2>
+            <p><strong>Tên đăng nhập:</strong> <span id="displayUsername"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <button id="returnHome" onclick="returnHome()">ĐI TỚI TRANG CHÍNH</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        button {
+            margin-top: 30px;
+        }
+        h1{
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            margin-top: -30px;
+            padding: 20px;
+        }
+        h2, #registrationSuccess h2 {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            margin-top: -20px;
+            padding: 20px;
+        }
+        #registrationSuccess {
+            display: none;
+            justify-content: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            width: 70%;
+        }
+
+        #registrationSuccess p {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        #returnHome {
+            font-family: 'Oswald', sans-serif;
+            padding: 8px 16px;
+            background-color: #e88f2a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        #returnHome:hover {
+            background-color: #2b2825;
+        }
+
+      
+        #message {
+            display: none;
+        }
+
+        #registrationForm {
+            position: relative;
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-bottom: -20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #registrationForm input {
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #registrationForm button {
+            font-family: 'Oswald', sans-serif;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e88f2a;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #registrationForm button:hover {
+            background-color: #2b2825;
+        }
+        #message {
+            position: absolute;
+            bottom: -20px; /* Điều chỉnh khoảng cách từ dưới lên */
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            color: #dc3545; /* Màu chữ đỏ cho thông báo lỗi */
+        }
+
+        #registrationForm input.error {
+            border-color: #dc3545; /* Màu đỏ cho border khi có lỗi */
+        }
+
+        #registrationForm input.error:focus {
+            box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Hiệu ứng shadow đỏ khi focus */
+        }
+    </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function returnHome() {
+            window.location.href = "home.html";
+        }
+
+        $(document).ready(function() {
+    $('#registrationForm').submit(function(event) {
+        event.preventDefault();
+
+        var username = $('#username').val();
+        var email = $('#email').val();
+        var password = $('#password').val();
+        var confirmPassword = $('#confirmPassword').val();
+
+        // Reset các thông báo trước đó
+        $('#message').text('');
+        $('#message').hide();
+        $('#password, #confirmPassword').removeClass('error');
+
+        if (username === '' || email === '' || password === '' || confirmPassword === '') {
+            $('#message').text('Vui lòng điền đầy đủ thông tin vào các trường.');
+            $('#message').show();
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            $('#message').text('Mật khẩu không khớp.');
+            $('#message').show();
+            $('#password, #confirmPassword').addClass('error');
+            return;
+        }
+
+        // Ẩn message khi đăng ký thành công
+        $('#message').hide();
+
+        // Hiển thị thông tin đăng ký thành công
+        $('#displayUsername').text(username);
+        $('#displayEmail').text(email);
+        $('#registrationForm').hide();
+        $('#registrationSuccess').show();
+
+        // Thêm class thành công cho input username và email
+        $('#username, #email').addClass('success');
+    });
+});
+    </script>
+</body>
+
+</html>

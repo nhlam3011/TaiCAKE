@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TaiCAKE !</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/sitelogo.png" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css\style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div id="home" class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email</h6>
+                        <span>LeVanTai@bestcake.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-primary border-inner py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="" width="300px">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Gọi ngay</h6>
+                        <span>+84 123 45 6789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <img src="img/logo.png" alt="" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="home.html" class="nav-item nav-link">Trang chủ</a>
+                <a href="about.html" class="nav-item nav-link">Thông tin</a>
+                <a href="menu.html" class="nav-item nav-link">Menu</a>
+                <a href="staffs.html" class="nav-item nav-link">Staffs</a>
+                <div class="nav-item dropdown m-0">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Thêm</a>
+                    <div class="dropdown-menu">
+                        <a href="making.html" class="dropdown-item">QUY TRÌNH</a>
+                        <a href="discount.html" class="dropdown-item">ƯU ĐÃI</a>
+                        <a href="service.html" class="dropdown-item">DỊCH VỤ</a>
+                        <a href="rate.html" class="dropdown-item">ĐÁNH GIÁ</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Liên hệ với chúng tôi</a>
+                <a href="index.html" class="nav-item nav-link" id="user"><i class="fa fa-user"></i> Cá nhân</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Menu Start -->
+    <div id="menu" class="container-fluid about py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">Menu</h2>
+                <h1 class="display-4 text-uppercase">Danh mục tham khảo</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Sinh nhật</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Đám cưới</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/light-star.png" alt="" style="width: 150px; height: 150px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Ngôi sao sáng</h5>
+                                        <span>Chiếc bánh lấp lánh với các ngôi sao được làm từ kem phủ bên ngoài. Bên trong là lớp bánh hấp dẫn với phô mai và chocolate, mang đến một trải nghiệm ngọt ngào hòa quyện vị béo của phô mai và chocolate.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/magic-world.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Thế giới phép thuật</h5>
+                                        <span>Bánh hình trái tim đầy màu sắc với các hình ảnh phép thuật như cung hoàng đạo, đèn pha lê... Bên trong là một hỗn hợp các loại trái cây tươi và kem béo ngậy, khiến bạn cảm nhận như đang bước vào một thế giới phép thuật.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/flower-garden.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Vườn Hoa Tươi Sáng</h5>
+                                        <span>Được trang trí với những bông hoa tươi màu sắc tự nhiên, như hoa hồng, hoa cúc và hoa cẩm chướng. Bánh có lớp nhân kem bơ và hương vị trái cây tươi mát, như một dạo chơi trong vườn hoa rực rỡ.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/sky-advanture.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Phiêu Lưu Trên Không Trung</h5>
+                                        <span>Bánh hình bầu trời với máy bay, cầu vồng và các ngôi sao. Bên trong là lớp kem socola phủ trắng nhẹ nhàng kết hợp với việt quất và hương vị vani, mang lại cảm giác nhẹ nhàng và thú vị như một chuyến phiêu lưu trên không trung.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/superhero.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Siêu Anh Hùng</h5>
+                                        <span>Dành cho những người hâm mộ siêu anh hùng với các biểu tượng của các siêu anh hùng nổi tiếng. Bánh có lớp nhân kem custard và việt quất, kết hợp với hương vị cam thơm ngon, mang đến trải nghiệm mạnh mẽ và ngọt ngào.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/birthday-cake/fireman.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Ngọn lửa ảnh hùng</h5>
+                                        <span>Thiết kế theo hình ảnh một chiếc xe cứu hỏa rực rỡ với hệ thống phun nước và các chi tiết về nghề nghiệp lính cứu hỏa. Trên bề mặt bánh, các họa tiết ngọn lửa hoặc huy hiệu của đội cứu hỏa tạo điểm nhấn nổi bật.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/sweet-royal.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Hoàng Gia Ngọt Ngào</h5>
+                                        <span>Trang trí với họa tiết cổ điển hoàng gia, như hoa văn hoa hồng và chi tiết đồ trang sức sang trọng. Bên trong là lớp bánh vani phủ kem custard và dâu tây tươi, mang đến cảm giác ngọt ngào và tinh tế.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/walk-of-love.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Lối đi của tình yêu</h5>
+                                        <span>Các họa tiết điệu đà như những điệu nhảy và hình ảnh cặp tình nhân. Bên trong là lớp bánh kem phủ socola và việt quất, tạo ra một hương vị tươi mát và đầy vui tươi.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/happy-love.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Hạnh Phúc Duyên Dáng</h5>
+                                        <span>Bánh trắng tinh, trang trí với hoa hồng và các họa tiết tinh tế. Bên trong là lớp bánh hạt nêm kem vani và kem custard, tạo ra hương vị ngọt ngào và dịu dàng.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/mature-love.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Tình Yêu Trường Thành</h5>
+                                        <span>Sự hòa hợp giữa họa tiết cổ điển và vòng hoa cưới tinh tế. Bên trong là lớp bánh kem socola và việt quất, tạo ra hương vị đặc trưng và tươi mới.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/dance-of-love.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Vũ điệu tình yêu</h5>
+                                        <span>Bánh được trang trí với các họa tiết điệu đà, như những điệu nhảy và hình ảnh cặp tình nhân. Bên trong là lớp bánh kem phủ socola và việt quất, tạo ra một hương vị tươi mát và đầy vui tươi.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/wedding-cake/sunshine-in-grass.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Nắng Đẹp Trên Bãi Cỏ</h5>
+                                        <span>Cảnh bãi cỏ xanh tươi với ánh nắng và hoa văn sáng tạo tựa như sắc xuân của tỉnh yêu. Bên trong là lớp bánh socola phủ kem bơ và hạt dẻ, tạo nên hương vị ấm áp và ngọt ngào.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/fragrant-garden.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Vườn Hương Thơm</h5>
+                                        <span>Được trang trí với các loại hoa, trái cây và lá xanh tươi mát. Bên trong là lớp bánh vani phủ kem bơ và dâu, mang lại hương vị tươi mới và ngọt ngào như một vườn hoa thơm ngát.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/cartoon-world.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Thế Giới Đáng Yêu của Hoạt Hình</h5>
+                                        <span>Mang hình ảnh những nhân vật hoạt hình yêu thích, các nhân vật hoạt hình nổi tiếng khác, tạo cảm giác vui nhộn và trẻ trung.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/galaxy.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Hành Tinh Siêu Sao</h5>
+                                        <span>Cảm hứng từ không gian với các hình ảnh về vũ trụ, ngôi sao và các hành tinh. Bên trong là lớp bánh socola phủ kem phô mai và việt quất, tạo ra hương vị bí ẩn và hấp dẫn.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/sweet-heart.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Trái Tim Ngọt Ngào</h5>
+                                        <span>Chiếc bánh hình trái tim được trang trí tinh tế với hoa hồng và chi tiết lãng mạn. Bên trong là lớp bánh kem vani và kem dâu, tạo ra hương vị ngọt ngào và lãng mạn, hoàn hảo cho dịp kỷ niệm đặc biệt như ngày cưới hoặc kỉ niệm tình yêu.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/magical-puzzle.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Những mảnh ghép kì diệu</h5>
+                                        <span>Mang hình ảnh các mảnh ghép đầy màu sắc, tạo cảm giác lạ mắt và phong phú. Lớp bánh socola phủ kem custard và hạt dẻ, hương vị độc đáo và thú vị, phù hợp cho người thích sự đa dạng và thách thức trong trải nghiệm của mình.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/cakes/custom-cake/amazing-advanture.png" alt="" style="width:150px; height:150px;">
+
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Cuộc phiêu lưu kì thú</h5>
+                                        <span>Được thiết kế như một bản đồ phiêu lưu với các chi tiết về các địa điểm thú vị. Lớp bánh kem phủ socola và việt quất, tạo cảm giác thú vị và phấn khích, hoàn hảo để kỷ niệm những chuyến du lịch quan trọng trong cuộc đời.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
